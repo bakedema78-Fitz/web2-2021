@@ -1,6 +1,10 @@
      :root {
         /*put varieables here*/
-        
+        --main-color:#ece4db;
+        --accent-1:#d8e2dc;
+        --accent-2:#fae1dd;
+        --accent-3:#cdb4db;
+        --accent-4:#caf0f8;
       }
       
       * {
@@ -12,7 +16,7 @@
       }
       
       body {
-        background: lightgrey;
+        background:var(--main-color);
       }
       
       header {
@@ -21,8 +25,8 @@
       }
       
       nav {
-        background: black;
-        color: white;
+        background:var(--accent-1);
+        color: Black;
       }
       nav ul {
         list-style-type:none;
@@ -31,7 +35,7 @@
         display: inline-block;
       }
       nav li a {
-        display:incline-block;
+        display:inline-block;
         color: white;
         text-decoration:none;
         padding: 2vh 4vh;
@@ -44,13 +48,13 @@
       }
       
       footer {
-        background: black;
+        background-color:var(--accent-1);
         color: white;
         padding: 3rem;
         min-height: 10vh;
       }
       .container {
-        background:burlywood;
+        background:var(--accent-2);
         padding: 1rem;
         min-height: 60vh;
         width: 88%;
@@ -203,6 +207,18 @@
       }
       .section-item {
         flex-basis:92%;
+      }
+      .row {
+        flex-direction:column;
+      }
+      .section-header {
+        text-align: center;
+      }
+      .row-button {
+        max-width:60vw;
+      }
+      .contact {
+        align-items:center;
       }
       
       }
